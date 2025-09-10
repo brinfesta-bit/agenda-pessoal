@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Agenda Móvel</string>
+    <string name="novo_agendamento">Novo agendamento</string>
+    <string name="digite_agendamento">Digite seu agendamento...</string>
+    <string name="criado_em">Criado em:</string>
+    <string name="escolha_dia">Escolha o dia:</string>
+    <string name="btn_cor">Cor</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_apagar">Lixo</string>
+    <string name="domingo">D</string>
+    <string name="segunda">S</string>
+    <string name="terca">T</string>
+    <string name="quarta">Q</string>
+    <string name="quinta">Q</string>
+    <string name="sexta">S</string>
+    <string name="sabado">S</string>
+</resources>

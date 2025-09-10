@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:id="@+id/layoutPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Área principal do texto editável -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/agenda_item_background"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/editTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Digite seu agendamento..."
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#E0FFFFFF"
+                android:minLines="2"
+                android:gravity="top"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/textDataHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:textColor="#E0FFFFFF"
+                android:text="Criado em: --/--/---- --:--" />
+
+        </LinearLayout>
+
+        <!-- Botões de ação -->
+        <LinearLayout
+            android:id="@+id/layoutBotoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <!-- Botão Mudar Cor -->
+            <Button
+                android:id="@+id/btnMudarCor"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/action_button_background"
+                android:text="Cor"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#2196F3" />
+
+            <!-- Botão Editar -->
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/action_button_background"
+                android:text="Editar"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#FF9800" />
+
+            <!-- Botão Salvar -->
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/action_button_background"
+                android:text="Salvar"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#4CAF50" />
+
+            <!-- Botão Apagar -->
+            <Button
+                android:id="@+id/btnApagar"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/action_button_background"
+                android:text="Lixo"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#F44336" />
+
+        </LinearLayout>
+
+        <!-- Indicador de arrastar -->
+        <View
+            android:id="@+id/dragHandle"
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/drag_handle"
+            android:alpha="0.5" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

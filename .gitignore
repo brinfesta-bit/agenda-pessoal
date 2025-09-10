@@ -1,0 +1,25 @@
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.log
+
+# Pastas de dependências (se houver)
+node_modules/
+
+# Arquivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Arquivos específicos do Windows
+ehthumbs.db
+Desktop.ini
